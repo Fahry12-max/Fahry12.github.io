@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Fahry</title>
+    <link href="main.css" rel="stylesheet"
+</head>
+<body>
+    <header>
+        <section class="navbar">
+            <h1></h1>    
+               <nav>
+                <a href="#home">Beranda</a>
+                <a href="#about">About</a>
+                <a href="#projects">Project</a>
+                <a href="#contact">Contact</a>
+               </nav>
+        </section>
+    </header>
+
+    <section id="home">
+        <h1>Hi, I'm Fachry Achmad Hastanto</h1>
+        <p>Student & Future Software Engineer</p>
+        <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">See My Project</button>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Aku Fachry Achmad Hastanto, pelajar yang tertarik dengan teknologi, coding, dan AI. Saat ini aku fokus belajar Python, HTML, dan CSS sambil mengerjakan project digital untuk pelajar. Selain dunia IT, aku juga aktif di workout dan taekwondo. Mimpiku adalah menjadi software engineer profesional dan membangun perusahaan teknologi yang bermanfaat bagi banyak orang.</p>
+    </section>
+
+    <section id="projects">
+        <h1>My Project</h1>
+        <div class="projects">
+            <div class="card"> Study Time Tracker</div>
+            <div class="card"> Planeer Belajar Harian</div>
+            <div class="card"> Focus Timer Gen Z</div>
+            <div class="card"> Kalkulator</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1>Contact</h1>
+        <p class="desc">Kamu bisa hubungi aku lewat email atau sosial media di bawah ini:</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong><a href="mailto:fahri@example.com">My Email</a></p>
+            <p><strong>Github:</strong><a href="https://github.com/Fahry12-max" target="_blank">My Github</a></p>
+        </div>
+
+        <div class="sosial-links">
+            <a href="https://github.com/Fahry12-max" target="_blank">Github</a>
+            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/username" target="_blank">Instagram</a>
+        </div>
+
+        <from action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Nama Kamu" required>
+            <input type="email" name="email" placeholder="Email Kamu" required>
+            <textarea name="message" placeholder="Tulis Pesanmu..." required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </from>
+        
+    </section>
+
+    <footer>
+       <div class="footer-container">
+        <div class="footer-about">
+            <h3>Fachry</h3>
+            <p>Pelajar yang tertarik pada teknologi, coding, dan AI. Mimpiku adalah menjadi Software Engineer profesional dan membangun perusahaan teknologi bermanfaat.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Me</h4>
+            <a href="#">Instagram</a> |
+            <a href="#">Tiktok</a> |
+            <a href="#">Youtube</a>
+        </div>
+       </div>
+       <div class="footer-bottom">
+        <p>&copy; 2025 Fachry. All Rights Reserved.</p>
+       </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
