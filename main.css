@@ -180,6 +180,15 @@ section.show {
       background: #0072ff;
 }
 
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
 #contact h1 {
      font-size: 4rem;
      font-weight: 800;
@@ -316,3 +325,4 @@ footer {
     font-size: 14px;
     color: #777;
 }
+
