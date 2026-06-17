@@ -3,97 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Fahry</title>
-    <link href="main.css" rel="stylesheet"
+    <title>Fachry Achmad Hastanto - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <section class="navbar">
-            <h1></h1>    
-               <nav>
-                <a href="#home">Beranda</a>
-                <a href="#about">About</a>
-                <a href="#projects">Project</a>
-                <a href="#contact">Contact</a>
-               </nav>
-        </section>
+
+    <!-- NAVBAR -->
+    <header id="site-header">
+        <div class="navbar">
+            <a href="#home" class="nav-logo">Fachry<span>.</span></a>
+            <nav>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- HERO -->
     <section id="home">
-        <h1>Hi, I'm Fachry Achmad Hastanto</h1>
-        <p>Student & Future Software Engineer</p>
-        <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">See My Project</button>
+        <div class="hero-eyebrow">student & future software engineer
+            Building under Altaris</div>
+        <h1>
+            Hi, I'm<br>
+            <span class="name">Fachry Achmad</span><br>
+            Hastanto
+        </h1>
+        <p class="hero-tagline">Membangun produk digital yang bermanfaat — satu project pada satu waktu.</p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn-primary">Lihat Project</a>
+            <a href="#contact" class="btn-outline">Hubungi Aku</a>
+        </div>
+        <div class="scroll-hint">scroll</div>
     </section>
 
+    <div class="section-wrapper">
+
+    <!-- ABOUT -->
     <section id="about">
-        <h1>About Me</h1>
-        <p>Aku Fachry Achmad Hastanto, pelajar yang tertarik dengan teknologi, coding, dan AI. Saat ini aku fokus belajar Python, HTML, dan CSS sambil mengerjakan project digital untuk pelajar. Selain dunia IT, aku juga aktif di workout dan taekwondo. Mimpiku adalah menjadi software engineer profesional dan membangun perusahaan teknologi yang bermanfaat bagi banyak orang.</p>
+        <div class="section-label">about</div>
+        <h2>Tentang Saya</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Aku <strong>Fachry Achmad Hastanto</strong>, pelajar yang tertarik dengan teknologi, bisnis, dan AI. Fokus saat ini: membangun project digital yang punya dampak nyata bagi penggunanya.</p>
+                <p>Di luar dunia IT, aku aktif di <strong>workout</strong> dan <strong>running</strong>. Mimpiku adalah menjadi pengusaha dan membangun perusahaan teknologi yang bermanfaat — di bawah brand <strong>Altaris</strong>.</p>
+                <p>Saat ini belajar Python, HTML, CSS, dan JavaScript sambil terus shipping project nyata ke production.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-name">HTML & CSS</div>
+                    <div class="skill-level">Building & shipping</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level">Actively learning</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-level">Beginner level</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Vercel</div>
+                    <div class="skill-level">Deploy & hosting</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ECOSYSTEM -->
+    <section id="ecosystem">
+        <div class="section-label">ecosystem</div>
+        <h2>Altaris</h2>
+        <img
+            src="Logo Altaris.png"
+            alt="Altaris Logo"
+            class="ecosystem-logo"
+        >
+        <p class="ecosystem-desc">
+            The umbrella identity behind all my projects, experiments, and future ventures. Setiap produk yang aku ship berada di bawah satu nama — Altaris.
+        </p>
+        <div class="ecosystem-pillars">
+            <div class="pillar">
+                <div class="pillar-icon">⚙️</div>
+                <div class="pillar-name">Products</div>
+                <div class="pillar-desc">Aplikasi web yang langsung bisa dipakai — Timer Study, Photobooth Kita, dan yang akan datang.</div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">🧪</div>
+                <div class="pillar-name">Experiments</div>
+                <div class="pillar-desc">Eksplorasi ide dan teknologi baru sebelum jadi produk penuh.</div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">🚀</div>
+                <div class="pillar-name">Ventures</div>
+                <div class="pillar-desc">Proyek ambisius jangka panjang yang sedang dibangun perlahan.</div>
+            </div>
+        </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
-        <h1>My Project</h1>
-        <div class="projects">
+        <div class="section-label">work</div>
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+
             <div class="card">
-                <a href="https://timerstudy.vercel.app/">Timer Study </a>
+                <div class="card-preview timer">⏱</div>
+                <div class="card-body">
+                    <div class="card-title">[ Altaris ] Timer Study</div>
+                    <p class="card-desc">Aplikasi Pomodoro timer untuk sesi belajar yang lebih produktif. Dilengkapi multi-mode, notifikasi browser, dan session tracking.</p>
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                    <a href="https://timerstudy.vercel.app/" target="_blank" class="card-link">Lihat Project</a>
+                </div>
             </div>
+
             <div class="card">
-                <a href="https://photoboothkita.vercel.app/">Photobooth </a>
+                <div class="card-preview photobooth">📸</div>
+                <div class="card-body">
+                    <div class="card-title">[ Altaris] Photobooth Kita</div>
+                    <p class="card-desc">Browser-based photobooth app — ambil foto strip langsung dari kamera tanpa install apapun. Free & open.</p>
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">Canvas API</span>
+                        <span class="tag">Camera API</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                    <a href="https://photoboothkita.vercel.app/" target="_blank" class="card-link">Lihat Project</a>
+                </div>
             </div>
-            <div class="card"><a href="#">Coming Soon</a>
+
+            <div class="card">
+                <div class="card-preview soon"> coming soon</div>
+                <div class="card-body">
+                    <div class="card-title">Next Project</div>
+                    <p class="card-desc">Sesuatu yang baru sedang dalam pengerjaan di bawah Altaris. Stay tuned.</p>
+                    <div class="card-tags">
+                        <span class="tag">TBA</span>
+                    </div>
+                </div>
             </div>
-            <div class="card"> Coming Soon</div>
+
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <h1>Contact</h1>
-        <p class="desc">Kamu bisa hubungi aku lewat email atau sosial media di bawah ini:</p>
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-label">contact</div>
+        <h2>Let's Connect</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Ada project atau kolaborasi?</h3>
+                <p>Terbuka untuk diskusi, kolaborasi, atau sekadar ngobrol soal teknologi & bisnis.</p>
+                <div class="contact-links">
+                    <a href="mailto:nabaticoklad@gmail.com" class="contact-link-item">
+                        <span class="contact-link-label">Email</span>
+                        nabaticoklad@gmail.com
+                    </a>
+                    <a href="https://github.com/Fahry12-max" target="_blank" class="contact-link-item">
+                        <span class="contact-link-label">GitHub</span>
+                        Fahry12-max
+                    </a>
+                    <a href="https://www.instagram.com/ryy_12_?igsh=MW5vejNsN29lcDVuaQ==" target="_blank" class="contact-link-item">
+                        <span class="contact-link-label">Instagram</span>
+                        @ryy_12_
+                    </a>
+                    <a href="https://www.linkedin.com/in/fachry-achmad-hastanto-482257404?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-link-item">
+                        <span class="contact-link-label">LinkedIn</span>
+                        Fachry Achmad Hastanto 
+                    </a>
+                </div>
+            </div>
 
-        <div class="contact-info">
-            <p><strong>Email:</strong><a href="mailto:nabaticoklad@gmail.com">My Email</a></p>
-            <p><strong>Github:</strong><a href="https://github.com/Fahry12-max" target="_blank">My Github</a></p>
+            <form action="https://formspree.io/f/meelklbd" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Nama kamu" required>
+                <input type="email" name="email" placeholder="Email kamu" required>
+                <textarea name="message" placeholder="Tulis pesanmu..." required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
         </div>
-
-        <div class="sosial-links">
-            <a href="https://github.com/Fahry12-max" target="_blank">Github</a>
-            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com/username" target="_blank">Instagram</a>
-        </div>
-
-        <form action="https://formspree.io/f/meelklbd" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Nama Kamu" required>
-            <input type="email" name="email" placeholder="Email Kamu" required>
-            <textarea name="message" placeholder="Tulis Pesanmu..." required></textarea>
-            <button type="submit">Kirim Pesan</button>
-        </form>
-        
     </section>
 
+    </div><!-- end section-wrapper -->
+
+
+<!-- FOOTER -->
     <footer>
-       <div class="footer-container">
-        <div class="footer-about">
-            <h3>Fachry</h3>
-            <p>Pelajar yang tertarik pada teknologi, coding, dan AI. Mimpiku adalah menjadi Software Engineer profesional dan membangun perusahaan teknologi bermanfaat.</p>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Fachry<span>.</span></h3>
+                <p>Pelajar yang tertarik pada teknologi, coding, dan AI. Membangun produk digital di bawah brand <strong>Altaris</strong>.</p>
+            </div>
+            <div class="footer-links">
+                <h4>navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>follow</h4>
+                <div class="footer-social-links">
+                    <a href="https://www.instagram.com/ryy_12_?igsh=MW5vejNsN29lcDVuaQ==" target="_blank">Instagram</a>
+                    <a href="https://www.tiktok.com/@hry12_?_r=1&_t=ZS-93y7dTDfwOX" target="_blank">TikTok</a>
+                    <a href="https://youtube.com/@hry12?si=YUXPPtBIkE4gozPK" target="_blank">YouTube</a>
+                    <a href="https://github.com/Fahry12-max" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Designed and developed by Fahri. &middot; <span class="altaris">Powered by Altaris.</span></p>
         </div>
-        <div class="footer-social">
-            <h4>Follow Me</h4>
-            <a href="https://www.instagram.com/ryy_12_?igsh=MW5vejNsN29lcDVuaQ==">Instagram</a> |
-            <a href="https://www.tiktok.com/@hry12_?_r=1&_t=ZS-93y7dTDfwOX">Tiktok</a> |
-            <a href="https://youtube.com/@hry12?si=YUXPPtBIkE4gozPK">Youtube</a>
-        </div>
-       </div>
-       <div class="footer-bottom">
-        <p>&copy; 2025 Fachry. All Rights Reserved.</p>
-       </div>
     </footer>
     <script src="main.js"></script>
 </body>
